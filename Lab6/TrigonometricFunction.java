@@ -18,8 +18,8 @@ public class TrigonometricFunction {
         System.out.println("Enter degree: ");
         double inputDegree = input.nextDouble();
         double result;
-         double inputRadians = Math.toRadians(inputDegree);
-
+        double inputRadians = Math.toRadians(inputDegree);
+        
         //Calculating based on the selected choice
         switch (selectedChoice) {
             case 1:
