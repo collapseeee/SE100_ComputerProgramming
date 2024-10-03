@@ -1,7 +1,7 @@
 public class MultipleChoiceGrading {
     public static void main(String[] args) {
-        char[][] correctAnswers = {
-            {'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D'}};
+        char[] correctAnswers = 
+            {'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D'};
         char[][] studentsAnswers = {
             {'A', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'}, //Student 0
             {'D', 'B', 'A', 'B', 'C', 'A', 'E', 'E', 'A', 'D'}, //Student 1
@@ -16,12 +16,12 @@ public class MultipleChoiceGrading {
         printStudentScore(answerChecker(studentsAnswers, correctAnswers));
             
     }
-    public static int[] answerChecker(char[][]studentsAnswers, char[][]correctAnswers) {
+    public static int[] answerChecker(char[][]studentsAnswers, char[]correctAnswers) {
         int[] studentsScore = new int[studentsAnswers.length];
         for (int i = 0; i < studentsAnswers.length; i++) {
             int totalScore = 0;
             for (int j = 0; j < studentsAnswers[i].length; j++) {
-                if (studentsAnswers[i][j] == correctAnswers[0][j]) {
+                if (studentsAnswers[i][j] == correctAnswers[j]) {
                     totalScore++;
                 }
             }
